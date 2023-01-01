@@ -20,7 +20,7 @@ export default function Home() {
 
 
 
-  const handlerPosts = () => {
+ {/*  const handlerPosts = () => {
     GetUrl("/api/data").then((res, err) => {
       if (res && res.status === 200) {
         console.log(res.data)
@@ -31,6 +31,8 @@ export default function Home() {
   }
 
   handlerPosts()
+
+  */}
 
   useEffect(() => { }, []);
 

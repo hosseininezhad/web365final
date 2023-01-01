@@ -349,7 +349,7 @@ const MainHeader = () => {
           </div>
 
 
-          <i onClick={() => setContactModal(false)} class={`${styles.closeIcon} fa-solid fa-xmark`}></i>
+          <i onClick={() => setContactModal(false)} className={`${styles.closeIcon} fa-solid fa-xmark`}></i>
         </div>
       </div>
       }
