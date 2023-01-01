@@ -1,0 +1,501 @@
+/* -------------------------------------------------------------------- Header - Nav + Heading */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 27rem;
+    background-image: url("/assets/images/bg.jfif");
+}
+
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.5);
+}
+
+.header .logo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.header nav ul {
+    display: flex;
+    z-index: 2;
+    align-items: center;
+
+}
+
+.header nav ul li {
+    z-index: 2;
+    list-style: none;
+    padding: 0 1.2rem 1.2rem 1.2rem;
+    color: white;
+    font-family: "Kalameh";
+    font-size: 1.5rem;
+}
+
+.header nav ul li:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header .navIcons {
+    color: white;
+    z-index: 2;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header .navIcons i {
+    margin-right: 1.2rem;
+}
+
+.menuIcon {
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.header .navIcons i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header .heading {
+    margin-top: 1rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90vw;
+    color: white;
+}
+
+.header .heading h1 {
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.header .heading p {
+    font-size: 0.9rem;
+}
+
+
+
+/* -------------------------------------------------------------------- Search Modal */
+
+.header .searchModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header .searchModal::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30, 30, 30, 0.9);
+    z-index: 999;
+}
+
+.header .searchModal input {
+    width: 90vw;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-family: "IRANSans";
+    z-index: 1001;
+}
+
+.header .searchModal .closeIcon {
+    background-color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 30vh;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    z-index: 1002;
+}
+
+.header .searchModal .closeIcon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/* -------------------------------------------------------------------- Info Modal */
+
+.header .info {
+    width: 300px;
+    height: 100vh;
+    z-index: 20000;
+    position: fixed;
+    top: 0;
+    padding: 2rem;
+    color: #cacaca;
+    background-color: #1E2228;
+    overflow: auto;
+    animation-name: rightOpen;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes rightOpen {
+    0% {
+        right: -300px
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.header .infoLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .info .infoLogo .arrowRight {
+    font-size: 1.2rem;
+    padding: 0.8rem 0.9rem;
+    border-radius: 2rem;
+}
+
+.header .info .infoLogo .arrowRight:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.header .info .about {
+    text-align: justify;
+    margin-top: 3rem;
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+}
+
+.header .info .address {
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+}
+
+.header .info .email,
+.header .info .tel {
+    font-family: "Kalameh";
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.header .info .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .info .links a {
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.header .info .links a:hover {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.header .info .social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+.header .info .social i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.header .info h3 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+
+/* -------------------------------------------------------------------- Sub Menu */
+
+.header .subMenu {
+    width: 80vw;
+    position: absolute;
+    top: 4.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1E2228;
+    border-radius: 0.2rem;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    z-index: 10;
+    padding: 2rem;
+    animation-name: subMenu;
+    animation-duration: 0.5s;
+}
+
+@keyframes subMenu {
+    0% {
+        margin-top: 3rem;
+        opacity: 0;
+    }
+}
+
+.header .subMenu h3 {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.header .subMenu ul {
+    margin-right: 0.2rem;
+    margin-top: 1rem;
+}
+
+.header .subMenu ul li {
+    list-style: none;
+    color: white;
+    margin-bottom: 0.7rem;
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+
+.header .subMenu ul li:hover {
+    opacity: 1;
+    cursor: pointer;
+    list-style: disc;
+}
+
+
+/* -------------------------------------------------------------------- Menu Modal */
+
+.header .menuModal {
+    width: 300px;
+    height: 100vh;
+    z-index: 20000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    color: #cacaca;
+    background-color: #1E2228;
+    overflow: auto;
+    animation-name: leftOpen;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes leftOpen {
+    0% {
+        left: -300px
+    }
+}
+
+.header .menuModal .menuLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menuModal .menuLogo .arrowLeft {
+    font-size: 1.2rem;
+    padding: 0.8rem 0.9rem;
+    border-radius: 2rem;
+}
+
+.header .menuModal .menuLogo .arrowLeft:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.header .menuModal ul {
+    margin-top: 3rem;
+}
+
+.header .menuModal ul li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.header .menuModal ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.header .menuModal ul li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menuModal ul li span i {
+    margin-left: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* -------------------------------------------------------------------- Float Navigation */
+
+.floatNavigation{
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 4%);
+    background: rgba(255,255,255, 0.95);
+    animation-name: showNav;
+    animation-duration: 0.5s;
+    padding: 1.4rem 1.4rem 1.3rem 1.4rem;
+}
+
+@keyframes showNav{
+    0%{
+        top:-6rem
+    }
+}
+
+.header .floatNavigation .logo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floatNavigation .logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+.header .floatNavigation ul {
+    display: flex;
+    z-index: 2;
+    align-items: center;
+}
+
+.header .floatNavigation ul li {
+    z-index: 2;
+    list-style: none;
+    padding: 1.2rem 1.4rem 1.6rem 1.4rem;
+    margin-top: -1rem;
+    margin-bottom: -1.4rem;
+    color: #303030;
+    font-family: "Kalameh";
+    font-size: 1.5rem;
+}
+
+.header .floatNavigation ul li:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header .floatNavigation .navIcons {
+    color: #303030;
+    z-index: 2;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .floatNavigation .navIcons i {
+    margin-right: 1.5rem;
+}
+
+.floatNavigation .menuIcon {
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.header .floatNavigation .navIcons i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------------------------------------------- Responsive */
+
+@media screen and (max-width:1120px) {
+    .header .menuIcon {
+        display: flex;
+    }
+
+    .header nav ul,
+    .header nav ul li,
+    .header .floatNavigation ul,
+    .header .floatNavigation ul li {
+        display: none;
+    }
+    .floatNavigation{
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1120px) {
+    .header .menuModal,
+    .header .menuIcon {
+        display: none;
+    }
+}

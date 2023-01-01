@@ -1,0 +1,39 @@
+.post {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    color: #606060;
+}
+
+.post:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.post img {
+    margin-left: 1rem;
+    border-radius: 0.2rem;
+}
+
+.post .details .title {
+    display: flex;
+    color: #404040;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.post .details .desc {
+    display: flex;
+    color: #999;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.post .details .desc i {
+    margin-left: 0.3rem;
+}
+
+.post .details .time {
+    margin-left: 1rem;
+}

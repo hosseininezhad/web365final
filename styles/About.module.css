@@ -1,0 +1,662 @@
+.main {
+  padding-bottom: 20rem;
+  background-color: #f3f4f7;
+}
+
+/* ---------------------------------------------- First Section */
+.main .firstSection {
+  background-color: #f9fafb;
+  padding-top: 5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.main .firstSection .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .firstSection .container .imageContainer {
+  max-width: 550px;
+  max-height: 460px;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.main .firstSection .container .imageContainer div {
+  padding: 1.5rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 14rem;
+  right: 5rem;
+}
+.main .firstSection .container .imageContainer div span {
+  font-size: 1.5rem;
+  font-family: "Kalameh";
+}
+
+.main .firstSection .container .imageContainer div p {
+  font-size: 0.85rem;
+}
+
+.main .firstSection .container .details h2 {
+  color: #404040;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.main .firstSection .container .details .description {
+  color: #606060;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.main .firstSection .container .progressTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: #606060;
+  font-size: 0.85rem;
+}
+
+.main .firstSection .container .progressContainer .progress {
+  height: 0.6rem;
+  background-color: #eaebec;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+  margin-top: 1rem;
+}
+.main .firstSection .container .progressContainer .progress span {
+  height: 0.6rem;
+  border-radius: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main .firstSection .container .progressContainer div:nth-child(2) span {
+  background-color: #d698b5;
+  animation-name: fullProgressOne;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fullProgressOne {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.main .firstSection .container .progressContainer div:nth-child(4) span {
+  background-color: #9ccd7e;
+  animation-name: fullProgressTwo;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fullProgressTwo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.main .firstSection .container .progressContainer div:nth-child(6) span {
+  background-color: #5ca7db;
+  animation-name: fullProgressThrie;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fullProgressThrie {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.main .firstSection .container .progressContainer div:nth-child(8) span {
+  background-color: #848abd;
+
+  animation-name: fullProgressFour;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fullProgressFour {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.main .firstSection .atributies {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  padding: 5rem 0rem 5rem 0rem;
+}
+
+.main .firstSection .atributies div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  border-radius: 0.2rem;
+}
+
+.main .firstSection .atributies div:nth-child(1) {
+  background-color: #848abd;
+}
+
+.main .firstSection .atributies div:nth-child(2) {
+  background-color: #9ccd7e;
+}
+
+.main .firstSection .atributies div:nth-child(3) {
+  background-color: #5ca7db;
+}
+
+.main .firstSection .atributies div:nth-child(4) {
+  background-color: #d698b5;
+}
+
+.main .firstSection .atributies div i {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.main .firstSection .atributies div h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.main .firstSection .atributies div p {
+  margin-top: 0.7rem;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+
+/* ---------------------------------------------- Second Section */
+.main .secondSection {
+  background-color: #f3f4f7;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .secondSection h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #404040;
+}
+
+.main .secondSection p {
+  margin-bottom: 2rem;
+  color: #606060;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+
+.main .secondSection .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .secondSection .container .item {
+  text-align: center;
+}
+
+.main .secondSection .container .item h4 {
+  margin-bottom: 1rem;
+  color: #404040;
+  font-size: 1rem;
+}
+
+.main .secondSection .container img {
+  margin-right: 1.3rem;
+  margin-left: 1.3rem;
+}
+
+/* ---------------------------------------------- Third Section */
+.main .thirdSection {
+  background-color: #f9fafb;
+  padding: 5rem 10rem;
+}
+
+.main .thirdSection .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.main .thirdSection .container .imageContainer {
+  position: relative;
+}
+
+.main .thirdSection .container .imageContainer div {
+  padding: 1.5rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 2.2rem;
+  right: 15rem;
+}
+.main .thirdSection .container .imageContainer div span {
+  font-size: 1.5rem;
+  font-family: "Kalameh";
+  margin-bottom: 0.5rem;
+}
+
+.main .thirdSection .container .imageContainer div p {
+  font-size: 0.7rem;
+  color: #606060;
+  margin-top: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.commentCarouselContainer{
+  width: 100%;
+  padding-bottom: 2.5rem;
+}
+
+.commentCarouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d6d9e8;
+}
+
+.commentCarouselItem i {
+  font-size: 2rem;
+}
+
+.commentCarouselItem p {
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+  color: #707070;
+  text-align: center;
+}
+
+.commentCarouselItem div {
+  display: flex;
+}
+
+.commentCarouselItem div img {
+  border-radius: 0.2rem;
+}
+
+.commentCarouselItem div span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  margin-right: 1rem;
+}
+
+.commentCarouselItem div span h5 {
+  color: #404040;
+}
+
+.commentCarouselItem div span p {
+  font-size: 0.75rem;
+  margin-top: 0.2rem;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.indicators > i {
+  border-radius: 1rem;
+  width: 0.4rem;
+  margin: 0.25rem;
+  height: 0.4rem;
+  font-size: 0.4rem;
+  background-color: none;
+  background-color: #d6d9e8;
+}
+
+.indicators > i:hover,
+.indicators > i.active {
+  cursor: pointer;
+  width: 0.65rem;
+  height: 0.65rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main .companyLogoContainer{
+  margin-top: 7rem;
+
+}
+
+.main .companyLogo{
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.main .companyLogo:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* ---------------------------------------------- Four Section */
+.main .fourSection {
+  padding: 5rem 10rem 0 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.main .fourSection .formContainer {
+  margin-left: 1rem;
+}
+
+.main .fourSection .formContainer h3 {
+  color: #404040;
+  margin-bottom: 1rem;
+}
+
+.main .fourSection .formContainer .description {
+  color: #606060;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.main .fourSection .formContainer input,
+.main .fourSection .formContainer textarea {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  padding: 0.7rem 1.2rem;
+  border-radius: 1.5rem;
+  font-family: "IRANSans";
+  border: none;
+  outline: none;
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+
+.main .fourSection .formContainer .container {
+  display: flex;
+}
+.main .fourSection .formContainer .container input:first-child {
+  margin-left: 0.5rem;
+}
+.main .fourSection .formContainer .container input:last-child {
+  margin-right: 0.5rem;
+}
+
+.main .fourSection .formContainer button {
+  padding: 0.9rem 1.3rem 0.8rem;
+  color: white;
+  max-width: 12rem;
+  background-color: #848abd;
+  border: 5px solid #f9fafb;
+  border-radius: 2rem;
+  font-family: "IRANSans";
+  font-size: 0.8rem;
+}
+
+.main .fourSection .formContainer button i {
+  margin-left: 0.5rem;
+}
+
+.main .fourSection .formContainer button:hover {
+  border-color: #e7e9f2;
+  cursor: pointer;
+}
+
+.main .fourSection .imageContainer {
+  position: relative;
+}
+
+.main .fourSection .imageContainer div {
+  max-width: 170px;
+  padding: 1.5rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 25rem;
+  right: 20rem;
+}
+
+.main .fourSection .imageContainer div p {
+  font-size: 0.8rem;
+  color: #606060;
+  margin-top: 0.2rem;
+}
+
+.main .fourSection .imageContainer div p:first-child {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.main .fourSection .imageContainer div p:last-child {
+  margin-top: 0.5rem;
+}
+
+/* ---------------------------------------------- Responsive */
+@media screen and (max-width: 1190px) {
+  .main .firstSection .atributies {
+    grid-template-columns: auto auto;
+  }
+
+  .main .secondSection .container img {
+    width: 400px;
+    height: auto;
+  }
+
+  .main .firstSection .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main .firstSection .container .imageContainer {
+    margin-bottom: 3rem;
+  }
+
+  .main .secondSection .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main .thirdSection .container {
+    flex-direction: column;
+  }
+
+  .main .fourSection {
+    padding: 5rem 2rem 0 2rem;
+  }
+
+  .main .fourSection .imageContainer img {
+    width: 450px;
+    height: auto;
+  }
+
+  .main .fourSection .imageContainer div {
+    max-width: 170px;
+    top: 20rem;
+    right: 15rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main .secondSection .container img {
+    width: 400px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .main .thirdSection .container .imageContainer img {
+    width: 450px;
+    height: auto;
+  }
+
+  .main .thirdSection .container .imageContainer div {
+    transform: scale(0.9);
+    top: 1.5rem;
+    right: 12rem;
+  }
+
+  .main .fourSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main .fourSection .formContainer {
+    margin-left: 0rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main .firstSection .atributies {
+    grid-template-columns: auto;
+    padding: 5rem 0rem 5rem 0rem;
+  }
+
+  .main .firstSection .container .imageContainer {
+    max-width: 300px;
+    max-height: auto;
+    margin-left: 0;
+  }
+
+  .main .firstSection .container .imageContainer img {
+    width: 300px;
+    height: auto;
+  }
+
+  .main .firstSection .container .imageContainer div {
+    padding: 0.5rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 0.2rem;
+    top: 7rem;
+    right: 3.5rem;
+  }
+  .main .firstSection .container .imageContainer div span {
+    font-size: 1.5rem;
+  }
+
+  .main .firstSection .container .imageContainer div p {
+    font-size: 0.8rem;
+  }
+
+  .main .secondSection .container img {
+    width: 280px;
+    height: auto;
+  }
+
+  .main .firstSection {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+  .main .secondSection {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+
+  .main .thirdSection .container .imageContainer img {
+    width: 300px;
+    height: auto;
+  }
+
+  .main .thirdSection .container .imageContainer div {
+    transform: scale(0.8);
+    top: 1rem;
+    right: 6rem;
+  }
+
+  .main .fourSection .imageContainer img {
+    width: 300px;
+    height: auto;
+  }
+
+  .main .fourSection .imageContainer div {
+    transform: scale(0.7);
+    top: 12rem;
+    right: 10.5rem;
+  }
+
+  .main .fourSection .formContainer .container {
+    flex-direction: column;
+  }
+
+  .main .fourSection .formContainer .container input:first-child {
+    margin-left: 0rem;
+  }
+  .main .fourSection .formContainer .container input:last-child {
+    margin-right: 0rem;
+  }
+}

@@ -1,0 +1,10 @@
+.googleMap{
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 5rem;
+    width: 90%;
+    height: 450px;
+}

@@ -1,0 +1,140 @@
+/* ----------------------------------------------- Main Icons */
+.main {
+  padding-bottom: 20rem;
+  background-color: #f8f6f5;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #f3f4f7;
+}
+
+.icons div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.icons div img {
+  margin-bottom: 2rem;
+}
+
+.icons div p {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* ----------------------------------------------- Contact Form */
+
+.main .contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.main .contact h2 {
+  max-width: 70vw;
+  margin-bottom: 1.5rem;
+  font-family: "Kalameh";
+  font-size: 2.5rem;
+  color: #404040;
+}
+
+.main .contact p {
+  max-width: 70vw;
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+  color: #606060;
+}
+
+.main .contactForm {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 70vw;
+}
+
+.main .contactForm .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.main .contactForm .container input:nth-child(1) {
+  margin-left: 1rem;
+}
+
+.main .contactForm input,
+.main .contactForm textarea {
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  color: #606060;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+  font-family: "IRANSans";
+  width: 100%;
+  margin-bottom: 1.5rem;
+  resize: vertical;
+}
+
+.main .contactForm button {
+  padding: 0.9rem 1.3rem 0.8rem;
+  color: white;
+  max-width: 12rem;
+  background-color: #848abd;
+  border: 5px solid #f9fafb;
+  border-radius: 2rem;
+  font-family: "IRANSans";
+  font-size: 0.8rem;
+}
+
+.main .contactForm button i {
+  margin-left: 0.5rem;
+}
+
+.main .contactForm button:hover {
+  border-color: #e7e9f2;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------- Responsive */
+
+@media screen and (max-width: 800px) {
+  .icons {
+  grid-template-columns: 1fr;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+
+  .icons div {
+    margin-bottom: 4rem;
+  }
+
+  .main .contactForm {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .main .contactForm .container {
+    flex-direction: column;
+  }
+
+  .main .contactForm .container input:nth-child(1) {
+    margin-left: 0rem;
+  }
+
+  .main .contact h2,
+  .main .contact p {
+    max-width: 90vw;
+  }
+}

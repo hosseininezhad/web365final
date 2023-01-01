@@ -1,0 +1,193 @@
+.footer {
+    padding: 1rem 4rem;
+    position: relative;
+    z-index: 4;
+}
+
+.footer .columns {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.footer .columns h3 {
+    color: #404040;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------------------------------------------ Column 1 */
+
+.footer .firstColumns .posts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* ------------------------------------------------------------ Column 2 */
+
+.footer .secondCol .hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+    margin-right: -4px;
+}
+
+.footer .secondCol .hashtag {
+    color: white;
+    padding: 0.7rem 1rem 0.7rem;
+    font-size: 0.7rem;
+    background-color: #CACECF;
+    border-radius: 2rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+    border: 4px solid white;
+}
+
+.footer .secondCol .hashtag:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-color: #CACECF;
+
+}
+
+.footer .secondCol .category {
+    display: flex;
+}
+
+.footer .secondCol .category ul:first-child {
+    padding-left: 3.5rem;
+    padding-right: 1.5rem;
+}
+
+.footer .secondCol .category ul li {
+    margin-bottom: 0.5rem;
+    color: #606060;
+    font-size: 0.8rem;
+}
+
+.footer .secondCol .category ul li:hover {
+    cursor: pointer;
+    color: #5CA7DB;
+}
+
+
+
+/* ------------------------------------------------------------ Column 3 */
+
+.footer .thirdCol .address {
+    margin-bottom: 1.5rem;
+    color: #606060;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.footer .thirdCol .email {
+    font-family: "Kalameh";
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.footer .thirdCol .email:hover {
+    color: #5CA7DB;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.footer .thirdCol .tel {
+    font-family: "Kalameh";
+    font-size: 1.4rem;
+    color: #999;
+    margin-bottom: 2rem;
+}
+
+.footer .thirdCol .icons i {
+    font-size: 1.5rem;
+    color: #606060;
+    margin-left: 1rem;
+}
+
+.footer .thirdCol .icons i:hover {
+    color: #5CA7DB;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------ Column 4 */
+
+.footer .fourthCol ul:first-of-type {
+    margin-bottom: 2rem;
+}
+
+.footer .fourthCol li {
+    margin-bottom: 0.5rem;
+    color: #606060;
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+
+.footer .fourthCol li:hover {
+    cursor: pointer;
+    color: #5CA7DB;
+}
+
+
+/* ------------------------------------------------------------ Other */
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: #606060;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+
+.footer .topFooter {
+    position: absolute;
+    top: -8.5rem;
+    left: 0;
+}
+
+
+
+
+/* ------------------------------------------------------------ Responsive */
+
+@media screen and (max-width:1250px) {
+    .footer .columns {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+    .footer .columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .footer .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .copyright {
+        font-size: 0.6rem;
+        line-height: 1.5rem;
+    }
+
+    .footer {
+        padding: 1rem 1.5rem;
+    }
+}

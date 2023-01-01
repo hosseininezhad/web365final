@@ -1,0 +1,385 @@
+.main {
+  padding-bottom: 20rem;
+  background-color: #f7f4f7;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.main .topPhoto {
+  position: relative;
+  top: -5rem;
+  width: 100vw;
+  height: auto;
+  z-index: 500;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  margin-right: -4rem;
+  margin-left: -4rem;
+}
+.main .title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #999;
+  margin-bottom: -1rem;
+}
+
+
+.main .companyLogoContainer{
+  margin-top: 7rem;
+
+}
+
+.main .companyLogo{
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.main .companyLogo:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.main .features {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .description {
+  font-size: 1.1rem;
+  margin-top: 2.5rem;
+  line-height: 2.5rem;
+  color: #404040;
+  text-align: center;
+  max-width: 600px;
+}
+
+.main .features .container {
+  margin-right: 10vw;
+  margin-left: 10vw;
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  margin-top: 5rem;
+}
+
+.main .features .container .options {
+  margin-left: 2.5rem;
+  margin-top: 5rem;
+}
+
+.main .features .container .options .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-left: 3rem;
+  padding: 1.5rem;
+}
+
+.main .features .container .options .activeOption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-left: 3rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.main .features .container .options .option:hover {
+  background-color: white;
+
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.main .features .container .options .details {
+  margin-right: 1.2rem;
+}
+
+.main .features .container .options .details p:first-child {
+  font-size: 0.9rem;
+  font-size: #404040;
+}
+
+.main .features .container .options .details p:last-child {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #606060;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main .datePlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 7rem;
+
+}
+
+.main .datePlan .changer{
+    background-color: #ECEDEE;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    margin-top: 1.5rem;
+}
+
+
+.main .datePlan .changer .activeSpan{
+    border-radius: 2rem;
+    background-color: #5CA7DB;
+    color: white;
+}
+
+.main .datePlan .changer span{
+    
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+
+.main .datePlan .changer span:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.main .plans{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.main .plans .plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 20rem;
+    padding: 4rem 0 4rem 0;
+    border-radius: 0.2rem;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.04);
+}
+
+.main .plans .plan:nth-child(2){
+    transform: scale(1.1);
+}
+
+
+
+
+
+.main .plans .plan h2{
+    color: #404040;
+    font-size: 2rem;
+    font-family: "Kalameh";
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.main .plans .plan h3{
+    color: #606060;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.main .plans .plan p{
+    color: #606060;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
+
+.main .plans button {
+    color: white;
+    padding: 0.9rem 1.3rem 0.8rem;
+    font-size: 0.75rem;
+    background-color: #5CA7DB;
+    border-radius: 2rem;
+    border: 5px solid white;
+    font-family: "IRANSans";
+    margin-top: 2rem;
+    
+}
+
+.main .plans button:hover {
+    border-color: #D0E4F3;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main .contact{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/illustration/map.png");
+    background-repeat: none;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    width: 90vw;
+  }
+  
+  .icons div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons div img {
+    margin-bottom: 2rem;
+  }
+  
+  .icons div p {
+    margin-bottom: 0.5rem;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+  .activeImage {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main .features .container {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5rem;
+  }
+
+  .activeImage {
+    width: 300px;
+    height: auto;
+  }
+
+  .main .features .container .options {
+    margin-left: 0rem;
+    justify-content: center;
+  }
+
+
+  .main .plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.main .plans .plan{
+    margin-bottom: 1.2rem;
+}
+.main .plans .plan:nth-child(2){
+    transform: scale(1);
+}
+
+
+
+.icons {
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+
+  .icons div {
+    margin-bottom: 4rem;
+  }
+
+}
+
+
+
+
+
+
+
+

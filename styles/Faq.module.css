@@ -1,0 +1,204 @@
+/* --------------------------------------------------------- Title Question */
+.main {
+  padding: 7rem 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+  padding-bottom: 20rem;
+}
+
+.main .title {
+  max-width: 40rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #404040;
+}
+
+/* --------------------------------------------------------- FAQ Questions */
+
+.main .faqQuestions {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  column-gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 0 5rem;
+  width: 100%;
+}
+
+.main .faqQuestions details {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  height: max-content;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.main .faqQuestions summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  position: relative;
+  background-color: white;
+}
+
+.main .faqQuestions summary:focus {
+  outline: none;
+}
+
+.main .faqQuestions .summaryTitle {
+  user-select: none;
+  color: #404040;
+  line-height: 30px;
+  margin-left: 10px;
+  text-align: justify;
+  font-size: 0.8rem;
+  margin-left: 2rem;
+}
+
+.main .faqQuestions details:hover .summaryTitle {
+  cursor: pointer;
+  color: #848abd;
+}
+
+.main .faqQuestions details:hover {
+  cursor: pointer;
+}
+
+.main .faqQuestions .summaryContent {
+  border-radius: 0 0 1rem 1rem;
+  cursor: default;
+  padding: 0.8rem 2rem 2rem 2rem;
+  line-height: 30px;
+  text-align: justify;
+  background-color: white;
+  color: #7e7e7e;
+  font-size: 0.7rem;
+}
+
+.main .faqQuestions .summaryChevronUp {
+  pointer-events: none;
+  color: #848abd;
+  font-size: 0.8rem;
+}
+
+.main .faqQuestions summary::-webkit-details-marker {
+  display: none;
+}
+
+.main .faqQuestions details[open] summary {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.main .faqQuestions details[open] .summaryTitle {
+  color: #848abd;
+}
+
+.main .faqQuestions details[open] .summaryChevronUp {
+  transform: rotateX(180deg);
+}
+
+/* --------------------------------------------------------- FAQ Form */
+
+.main .faqForm {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 70vw;
+  margin-top: 10rem;
+}
+
+.main .faqForm .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.main .faqForm .container input:nth-child(1) {
+  margin-left: 1rem;
+}
+
+.main .faqForm input,
+.main .faqForm textarea {
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  color: #606060;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+  font-family: "IRANSans";
+  width: 100%;
+  margin-bottom: 1.2rem;
+  resize: vertical;
+}
+
+.main .faqForm button {
+  padding: 0.9rem 1.3rem 0.8rem;
+  color: white;
+  max-width: 12rem;
+  background-color: #848abd;
+  border: 5px solid #f9fafb;
+  border-radius: 2rem;
+  font-family: "IRANSans";
+  font-size: 0.8rem;
+}
+
+.main .faqForm button i {
+  margin-left: 0.5rem;
+}
+
+.main .faqForm button:hover {
+  border-color: #e7e9f2;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------- Responsive */
+
+@media screen and (max-width: 960px) {
+  .main .title {
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+
+  .main .faqQuestions {
+    grid-template-columns: auto;
+    padding: 0 1rem;
+  }
+
+  .main .faqQuestions details {
+    width: 90vw;
+  }
+
+  .main .faqQuestions .summaryTitle {
+    font-size: 0.7rem;
+  }
+
+  .main .faqQuestions .summaryContent {
+    font-size: 0.7rem;
+  }
+
+  .main .faqForm {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 90vw;
+    margin-top: 10rem;
+  }
+
+  .main .faqForm .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .faqForm .container input:nth-child(1) {
+    margin-left: 0rem;
+  }
+}
