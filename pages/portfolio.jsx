@@ -61,7 +61,7 @@ const Portfolio = () => {
           <Link href="https://digitalSmart.ir" rel="noopener noreferrer" target="_blank">
             <figure className={styles.imageContainer}>
               <Image
-                src="/assets/images/portfolio/digitalsmart.png"
+                src="/assets/images/portfolio/digitalsmart.PNG"
                 width={360}
                 height={252}
                 alt=""
@@ -82,7 +82,7 @@ const Portfolio = () => {
           <Link href="https://demo.4ws.ir/fomex2" rel="noopener noreferrer" target="_blank">
             <figure className={styles.imageContainer}>
               <Image
-                src="/assets/images/portfolio/fomex.png"
+                src="/assets/images/portfolio/fomex.PNG"
                 width={360}
                 height={252}
                 alt=""
@@ -102,7 +102,7 @@ const Portfolio = () => {
           <Link href="https://jvr.ae" rel="noopener noreferrer" target="_blank">
             <figure className={styles.imageContainer}>
               <Image
-                src="/assets/images/portfolio/jvr.png"
+                src="/assets/images/portfolio/jvr.PNG"
                 width={360}
                 height={252}
                 alt=""
@@ -123,7 +123,7 @@ const Portfolio = () => {
           <Link href="https://sabetkala.com" rel="noopener noreferrer" target="_blank">
             <figure className={styles.imageContainer}>
               <Image
-                src="/assets/images/portfolio/sabetkala.png"
+                src="/assets/images/portfolio/sabetkala.PNG"
                 width={360}
                 height={252}
                 alt=""
@@ -144,7 +144,7 @@ const Portfolio = () => {
           <Link href="https://shahrkodak.com" rel="noopener noreferrer" target="_blank">
             <figure className={styles.imageContainer}>
               <Image
-                src="/assets/images/portfolio/shahrkodak.png"
+                src="/assets/images/portfolio/shahrkodak.PNG"
                 width={360}
                 height={252}
                 alt=""
@@ -165,7 +165,7 @@ const Portfolio = () => {
           <Link href="https://viraarch.ir" rel="noopener noreferrer" target="_blank">
             <figure className={styles.imageContainer}>
               <Image
-                src="/assets/images/portfolio/vira.png"
+                src="/assets/images/portfolio/vira.PNG"
                 width={360}
                 height={252}
                 alt=""
@@ -186,7 +186,7 @@ const Portfolio = () => {
           <Link href="https://zandikala.com" rel="noopener noreferrer" target="_blank">
             <figure className={styles.imageContainer}>
               <Image
-                src="/assets/images/portfolio/zandikala.png"
+                src="/assets/images/portfolio/zandikala.PNG"
                 width={360}
                 height={252}
                 alt=""
