@@ -363,7 +363,7 @@ margin-bottom: 0.5rem;
 .header .container .text .yellow{
     background: #10224F;
     color: #fff;
-    box-shadow: 0 2px 5px rgb(255 255 255 / 25%), 0 5px 15px rgb(255 185 49 / 35%);
+    box-shadow: 0 2px 5px rgb(255 255 255 / 25%), 0 5px 15px rgb(132 180 254 / 45%);
     border-radius: 50px;
     padding: 11px 28px;
     border: none;
@@ -381,7 +381,8 @@ margin-bottom: 0.5rem;
 .header .container .text .yellow:hover{
     color: #fff;
     background: #214A81;
-    box-shadow: 0 2px 5px rgb(255 255 255 / 30%), 0 7px 30px rgb(255 176 24 / 45%);
+    
+    box-shadow: 0 2px 5px rgb(255 255 255 / 30%), 0 7px 30px rgb(132 180 254 / 45%);
     top: -1px;
 }
 
