@@ -23,6 +23,25 @@
   background: #5CA7DB;
 }
 
+::-webkit-scrollbar-track
+{
+	border: 5px solid white;
+	border-color: transparent;
+	background-color: #b2bec3;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #dfe6e9;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #10224F;
+  width: 5px;
+}
+
 * {
   
   margin: 0;
@@ -43,11 +62,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "IRANSans";
-}
-
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
 }
 
 a{
